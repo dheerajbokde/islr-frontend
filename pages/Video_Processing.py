@@ -1,5 +1,5 @@
 import streamlit as st
-import cv2
+#import cv2
 
 # Use the full page instead of a narrow central column
 st.set_page_config(layout="wide")
