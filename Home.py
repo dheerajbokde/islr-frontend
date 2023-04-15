@@ -8,7 +8,7 @@ st.set_page_config(
 
 st.write("### 🙏 Welcome to")
 st.write("# :blue[I]ndian :blue[S]ign :blue[L]anguage :blue[R]ecognition")
-img = Image.open('artifacts/WELCOME.jpg')
+img = Image.open('artifacts/images/WELCOME.jpg')
 st.image(img, use_column_width=True)
 st.sidebar.success("Select an option above.")
 

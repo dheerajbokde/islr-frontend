@@ -1,6 +1,13 @@
 pandas
 numpy
+seaborn
+matplotlib
+scikit-learn
+dill
 Pillow
 streamlit
 opencv-python
+keras
+tensorflow
+streamlit-webrtc
 #-e .

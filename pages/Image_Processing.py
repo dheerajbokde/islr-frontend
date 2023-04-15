@@ -22,7 +22,7 @@ def load_image(image):
 
 def process_image(image_name):
     #print('Process image: ', image_name)
-    model = load_model('src/artifacts/model/cnn_isl_img_model.h5')
+    model = load_model('artifacts/model/cnn_isl_img_model.h5')
     img = image.load_img(image_name, target_size = (28,28))
     # convert image into array for prediction
     test_image = image.img_to_array(img)
