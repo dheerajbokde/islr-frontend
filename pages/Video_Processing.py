@@ -27,11 +27,11 @@ with col1:
         #fourcc = cv2.VideoWriter_fourcc(*'H264')
         fourcc = -1
         writer = cv2.VideoWriter(video_file, fourcc, 20, frame_size)
+        window_name = 'Video'
         while (cam_video.isOpened()):
             ret, frame = cam_video.read()
             if ret:
                 writer.write(frame)
-                window_name = 'Video'
                 cv2.imshow(window_name, frame)
                 cv2.setWindowProperty(window_name, cv2.WND_PROP_TOPMOST, 1)
                 if cv2.waitKey(1) & 0xFF == 27:
@@ -41,7 +41,8 @@ with col1:
                 break
         cam_video.release()
         writer.release()
-        cv2.destroyAllWindows()
+        #cv2.destroyAllWindows()
+        cv2.destroyWindow(window_name)
         vid = open(video_file, 'rb')
         video = vid.read()
 
