@@ -6,10 +6,8 @@ scikit-learn
 dill
 Pillow
 streamlit
-opencv-contrib-python
+opencv-contrib-python-headless
 keras
 tensorflow
 streamlit-webrtc
-libgtk2.0-dev
-pkg-config
 #-e .
