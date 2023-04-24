@@ -41,8 +41,8 @@ with col1:
                 break
         cam_video.release()
         writer.release()
-        #cv2.destroyAllWindows()
-        cv2.destroyWindow(window_name)
+        cv2.destroyAllWindows()
+        #cv2.destroyWindow(window_name)
         vid = open(video_file, 'rb')
         video = vid.read()
 
