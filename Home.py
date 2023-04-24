@@ -6,26 +6,51 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.write("### 🙏 Welcome to")
-st.write("# :blue[I]ndian :blue[S]ign :blue[L]anguage :blue[R]ecognition")
-img = Image.open('artifacts/images/WELCOME.jpg')
-st.image(img, use_column_width=True)
 st.sidebar.success("Select an option above.")
+st.markdown('<div style="text-align: center; font-size: 18px; ">Welcome to</div>', unsafe_allow_html=True)
+st.markdown('')
+st.markdown('<div style="text-align: center; font-size: 25px; ">Capstone Project</div>', unsafe_allow_html=True)
+st.markdown('')
+logo = Image.open('artifacts/images/iisc-logo.png')
+st.image(logo, use_column_width=True)
+st.markdown('<div style="text-align: center; font-size: 20px; ">Advanced Programme in Computational Data Science</div>', unsafe_allow_html=True)
+st.markdown('')
+st.markdown('<div style="text-align: center; font-size: 18px; ">on</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: center; font: bold; font-size: 40px; "> <em><strong>Generate English Text From Indian Sign Language (ISL) using Deep Learning</strong></em></div>', unsafe_allow_html=True)
+st.markdown('')
+img = Image.open('artifacts/images/isl.png')
+st.image(img, use_column_width=True)
+st.markdown('')
+st.markdown('<div style="text-align: center; font-size: 18px; ">Presented By</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: center; font-size: 30px; ">Group 6</div>', unsafe_allow_html=True)
 
-st.markdown(
-    """
-    Streamlit is an open-source app framework built specifically for
-    Machine Learning and Data Science projects.
-    **👈 Select a demo from the sidebar** to see some examples
-    of what Streamlit can do!
-    ### Want to learn more?
-    - Check out [streamlit.io](https://streamlit.io)
-    - Jump into our [documentation](https://docs.streamlit.io)
-    - Ask a question in our [community
-        forums](https://discuss.streamlit.io)
-    ### See more complex demos
-    - Use a neural net to [analyze the Udacity Self-driving Car Image
-        Dataset](https://github.com/streamlit/demo-self-driving)
-    - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-"""
-)
+col1,col2,col3,col4 = st.columns(4)
+name_1 = ['Aravind Durgoji','Dheeraj Bokde','Divya Abraham','Himanshu Singh']
+name_2 = ['Indranil Saha','Sumit Aggarwal','Tarun Julasaria']
+with col2:
+    for i in name_1:
+        name1_html_str = f"""
+            <style>
+            p.a {{
+                font: Bold 18px Courier;
+            }}
+            </style>
+            <p class="a">{i}</p>
+        """
+        st.markdown(name1_html_str, unsafe_allow_html=True)
+
+with col3:
+    for i in name_2:
+        name2_html_str = f"""
+            <style>
+            p.a {{
+                font: Bold 18px Courier;
+            }}
+            </style>
+            <p class="a">{i}</p>
+        """
+        st.markdown(name2_html_str, unsafe_allow_html=True)
+
+st.markdown('')
+st.markdown('<div style="text-align: center; font-size: 18px; ">Mentored By</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: center; font: Bold 20px Courier; ">Piyush Pathak</div>', unsafe_allow_html=True)
