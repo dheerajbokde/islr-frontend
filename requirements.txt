@@ -10,4 +10,5 @@ opencv-contrib-python-headless
 keras
 tensorflow
 streamlit-webrtc
+mediapipe
 #-e .
