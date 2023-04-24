@@ -6,7 +6,7 @@ scikit-learn
 dill
 Pillow
 streamlit
-opencv-python
+opencv-contrib-python-headless
 keras
 tensorflow
 streamlit-webrtc
